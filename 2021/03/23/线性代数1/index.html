@@ -6,31 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>线性代数1 | Hexo</title>
+  <title>线性代数1 | PuppyC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="0. 说明最近在复习线性代数. 感觉以前学的数学快忘光了, 只有一点模糊的印象, 很多具体的公式和概念已经很模糊了. 所以打算先从线性代数开始复习, 之后可能还会复习一下微积分和数理统计, 如果有需要, 之后还会学习一下离散数学, 实分析, 图论等数学知识. 选择的学习材料是MIT的18.06课程. 看了一部分视频, 但还是觉得看书更快一点, 总结的也更全面. 书使用的就是18.06的教材: In">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线性代数1">
 <meta property="og:url" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="PuppyC">
 <meta property="og:description" content="0. 说明最近在复习线性代数. 感觉以前学的数学快忘光了, 只有一点模糊的印象, 很多具体的公式和概念已经很模糊了. 所以打算先从线性代数开始复习, 之后可能还会复习一下微积分和数理统计, 如果有需要, 之后还会学习一下离散数学, 实分析, 图论等数学知识. 选择的学习材料是MIT的18.06课程. 看了一部分视频, 但还是觉得看书更快一点, 总结的也更全面. 书使用的就是18.06的教材: In">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/image-20210323150116134.png">
 <meta property="og:image" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/image-20210323150723080.png">
 <meta property="og:image" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/image-20210325174010274.png">
 <meta property="og:image" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/image-20210325173529329.png">
 <meta property="og:image" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/image-20210323155054280.png">
 <meta property="article:published_time" content="2021-03-23T08:44:50.000Z">
-<meta property="article:modified_time" content="2021-03-25T09:40:27.072Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2021-03-27T08:06:33.075Z">
+<meta property="article:author" content="Lloyd S">
 <meta property="article:tag" content="数学">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/image-20210323150116134.png">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="PuppyC" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/logo.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -54,7 +54,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/img/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -66,7 +66,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -77,10 +77,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -88,13 +84,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="github" target="_blank" href="https://github.com/lloydsun827" title="github"><i class="icon-github"></i></a>
 		        
 			</div>
 		</nav>
@@ -112,7 +102,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/img/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -129,13 +119,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="github" target="_blank" href="https://github.com/lloydsun827" title="github"><i class="icon-github"></i></a>
 			        
 				</div>
 			</nav>
@@ -146,7 +130,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -184,6 +168,8 @@
         <h2 id="0-说明"><a href="#0-说明" class="headerlink" title="0. 说明"></a>0. 说明</h2><p>最近在复习线性代数. 感觉以前学的数学快忘光了, 只有一点模糊的印象, 很多具体的公式和概念已经很模糊了. 所以打算先从线性代数开始复习, 之后可能还会复习一下微积分和数理统计, 如果有需要, 之后还会学习一下离散数学, 实分析, 图论等数学知识.</p>
 <p>选择的学习材料是MIT的18.06课程. 看了一部分视频, 但还是觉得看书更快一点, 总结的也更全面. 书使用的就是18.06的教材: <code>Introduction To Linear Algebra</code>. </p>
 <p>在这里写下的不是完整的笔记(个人也不太喜欢边看书/听课边记笔记). 在看书或者听课的时候, 记下简单的线索就可以了. 所以写的大多是看过相关章节后的个人总结. 所以可能会有错误或者信息不全的问题. 但对个人学习来说, 错误的总结也好过精美的摘抄. 之后也可能在回顾的时候, 修改一些明显的错误. </p>
+<span id="more"></span>
+
 <h2 id="1-Chapter-1-amp-2"><a href="#1-Chapter-1-amp-2" class="headerlink" title="1. Chapter 1 &amp; 2"></a>1. Chapter 1 &amp; 2</h2><p>这一部分的重点内容有两项, 第一是通过直观的体验(方程组,图像等)获得对线性代数的一些直觉; 第二是通过对肖元法的学习理解一些基础的概念. </p>
 <h3 id="1-1-从线性方程组开始"><a href="#1-1-从线性方程组开始" class="headerlink" title="1.1 从线性方程组开始"></a>1.1 从线性方程组开始</h3><p>从2个未知数2个方程（且有唯一解）说起吧, 因为这样的图比较好画. 如下图所示的方程组，相信求解是很容易的（肖元即可）. 而这一部分的线性代数所讲述的内容, 不会超过求解这个方程组的难度, 只是用矩阵/线性代数的语言和逻辑描述而已:<br>$$<br>x - 2y = 1\\3x + 2y = 11<br>$$</p>
 <p>既然是线性代数, 首先当然是线性的概念了. 所谓线性, 就是所有的未知数(即x, y)都是一次的, 并且不存在相乘的情况(即没有xy项). 线性方程组也就是多元一次方程组. 因为这样的一次项, 把他画出来是一条条直线, 而不是曲线, 所以就叫做”线性”. 当一次只看一行(一个方程时), 这样的图像可以很清楚的画出来:</p>
@@ -225,9 +211,19 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -316,6 +312,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2021/03/27/CS-AI%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CS/AI学习路线
+        
+      </div>
+    </a>
+  
   
     <a href="/2021/03/22/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2Hexo-Github/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">创建个人博客Hexo+Github</div>
@@ -361,7 +366,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 John Doe
+    		&copy; 2021 Lloyd S
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -378,7 +383,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -426,25 +431,17 @@ MathJax.Hub.Queue(function() {
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -463,6 +460,10 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">学习路线</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">CS</a>
@@ -516,43 +517,11 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">嘻嘻</div>
   	  	
     	</section>
     
