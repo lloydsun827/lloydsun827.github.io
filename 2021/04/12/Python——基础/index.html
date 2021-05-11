@@ -6,18 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>PuppyC</title>
+  <title>Python——基础 | PuppyC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CS&#x2F;AI技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="PuppyC">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Python基础[toc] 与其他任何的编程语言类似，Python的基础知识就是基本的语法规则，其中包含：  基本的数据结构与相应的语法规则：基本类型与复合类型 基本的流程控制单元与封装单元：循环、判断、函数等 面向对象：类 IO、异常与单元测试  至于Python的安装，现阶段已经很简单了。可以单独安装python，或者通过安装相应软件（如Anaconda）的方式，打包安装python。总之，简">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python——基础">
+<meta property="og:url" content="http://example.com/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="PuppyC">
-<meta property="og:description" content="CS&#x2F;AI技术博客">
+<meta property="og:description" content="Python基础[toc] 与其他任何的编程语言类似，Python的基础知识就是基本的语法规则，其中包含：  基本的数据结构与相应的语法规则：基本类型与复合类型 基本的流程控制单元与封装单元：循环、判断、函数等 面向对象：类 IO、异常与单元测试  至于Python的安装，现阶段已经很简单了。可以单独安装python，或者通过安装相应软件（如Anaconda）的方式，打包安装python。总之，简">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210412141249609.png">
+<meta property="og:image" content="http://example.com/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210511102835628.png">
+<meta property="og:image" content="http://example.com/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210511104416811.png">
+<meta property="article:published_time" content="2021-04-12T06:03:18.000Z">
+<meta property="article:modified_time" content="2021-05-11T03:12:06.240Z">
 <meta property="article:author" content="Lloyd S">
-<meta property="article:tag" content="CS, AI">
+<meta property="article:tag" content="CS">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210412141249609.png">
   
     <link rel="alternative" href="/atom.xml" title="PuppyC" type="application/atom+xml">
   
@@ -137,16 +144,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Python——基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Python——基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/">Python——基础</a>
+    <h1 class="article-title" itemprop="name">
+      Python——基础
     </h1>
   
 
@@ -169,11 +174,162 @@
 </ol>
 <p>至于Python的安装，现阶段已经很简单了。可以单独安装python，或者通过安装相应软件（如Anaconda）的方式，打包安装python。总之，简单查一查网上的方案即可。</p>
 <p>个人认为，安装好python之后，最好的开始是使用import this来看看Zen of Python：</p>
-        
-          <a class="article-more-a" href="/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/#more">more >></a>
-        
+<span id="more"></span>
+
+<p><img src="/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210412141249609.png" alt="image-20210412141249609"></p>
+<h2 id="1-数据结构与相应语法"><a href="#1-数据结构与相应语法" class="headerlink" title="1. 数据结构与相应语法"></a>1. 数据结构与相应语法</h2><p>数据结构包含两部分内容，其一是基本的数据类型，也就是整数、小数、字符等等；其二是复合的数据类型，如列表、字典等等。</p>
+<h3 id="1-1-基本数据类型"><a href="#1-1-基本数据类型" class="headerlink" title="1.1 基本数据类型"></a>1.1 基本数据类型</h3><p>计算机使用01的组合来存储和表示各种不同的数据，因此，将各种数据进行分类，并用“标签”来区分不同类别的数据，可以高效的存储各类数据。因为这样的原因，才有了不同的基本数据类型。</p>
+<p>首先是变量的概念，变量可以理解为是真实值的一种标签，他指向了特定的值。变量的命名规则，简单了解一下即可，随着python使用的增加，会对这些规则逐渐熟悉起来的。</p>
+<p>String是这里介绍的第一种基本数据类型，也就是（各国）文字。当然，文字与01组合的对应关系，可以参考如ASCII等标准，这里不再赘述。字符串的操作有如下几种：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Regarding Cases</span></span><br><span class="line">string.title()</span><br><span class="line">string.lower()</span><br><span class="line">string.upper()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Deleting whitespaces</span></span><br><span class="line">string.strip()</span><br><span class="line">string.rstrip()</span><br><span class="line">string.lstrip()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Adding whilespaces</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">\t, \n</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span> </span><br></pre></td></tr></table></figure>
+
+<p>字符串最常用的用法还是f-strings：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">f&#x27;<span class="subst">&#123;variable_a&#125;</span> string <span class="subst">&#123;variable_b&#125;</span>&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>第二种基本数据类型是数字，包括整数、小数等等，也就是int与float，这部分也比较简单。当数字比较大时，可以用下划线来分割数字：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">number = <span class="number">14_990_000_000</span></span><br></pre></td></tr></table></figure>
+
+<p>另外，对于常量（生命周期中值不改变的量），通常用大写来命名(只是一种书写规范)：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MAX_CONNECTION = <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<p>第三种是注释，可以用#或者三个单引号来写注释。</p>
+<h3 id="1-2-复合数据类型"><a href="#1-2-复合数据类型" class="headerlink" title="1.2 复合数据类型"></a>1.2 复合数据类型</h3><p>复合数据类型是将基本数据类型按照一定规则整合起来，Python中最主要的是列表与字典。其他的还包括元组、集合等。</p>
+<h4 id="1-2-1-列表"><a href="#1-2-1-列表" class="headerlink" title="1.2.1 列表"></a>1.2.1 列表</h4><p>任何数据类型的核心都可以理解为增删查改。除此之外，就是如何新建（定义）一个数据了。</p>
+<p>定义与查询：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># defining list</span></span><br><span class="line">lst = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="string">&#x27;a&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># indexing</span></span><br><span class="line">lst[<span class="number">0</span>], lst[-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># slicing</span></span><br><span class="line">lst[:<span class="number">3</span>], lst[<span class="number">3</span>:]</span><br><span class="line">lst[:] <span class="comment"># 复制一个list。在函数中对list操作时，会改变list中的数值。若不想改变，则需要复制一个list。如果不这样赋值的话，也会改变原list的值（只是创建了一个指向原列表的指针）</span></span><br></pre></td></tr></table></figure>
+
+<p>增加元素：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">lst.append(element)</span><br><span class="line">lst.insert(<span class="number">0</span>, element)</span><br></pre></td></tr></table></figure>
+
+<p>删除元素：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># by kw del</span></span><br><span class="line"><span class="keyword">del</span> lst[-<span class="number">1</span>]</span><br><span class="line"><span class="comment"># by remove() method</span></span><br><span class="line">lst.remove(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># popping</span></span><br><span class="line">popped_item = lst.pop(<span class="number">1</span>) <span class="comment"># default is -1</span></span><br></pre></td></tr></table></figure>
+
+<p>修改列表（赋值与排序）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sorting permanently</span></span><br><span class="line">lst.sort() <span class="comment"># A-Z</span></span><br><span class="line">lst.sort(reverse=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># sorting temporarily</span></span><br><span class="line"><span class="built_in">sorted</span>(lst)</span><br><span class="line"><span class="built_in">sorted</span>(lst, reverse=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># reverse the list(does not sort)</span></span><br><span class="line">lst.reverse()</span><br><span class="line"></span><br><span class="line"><span class="comment"># Checking Length</span></span><br><span class="line"><span class="built_in">len</span>(lst)</span><br></pre></td></tr></table></figure>
+
+<p>查询（访问）数据还有其他特别的方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># using for loop</span></span><br><span class="line"><span class="keyword">for</span> element <span class="keyword">in</span> lst:</span><br><span class="line">	<span class="built_in">print</span>(element)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># range() function</span></span><br><span class="line">numbers = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">1</span>, <span class="number">100</span>))</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<p>简单处理数据的方法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ages = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>]</span><br><span class="line"><span class="built_in">min</span>(ages), <span class="built_in">max</span>(ages), <span class="built_in">sum</span>(ages)</span><br></pre></td></tr></table></figure>
+
+<p>List Comprehension:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">squares = [x ** <span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>)]</span><br><span class="line"><span class="comment"># 0-4的平方</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-2-Tuple"><a href="#1-2-2-Tuple" class="headerlink" title="1.2.2 Tuple"></a>1.2.2 Tuple</h4><p>Tuple与列表差不多，就是里面元素的值是不能改变的。也就是用tuple来存放一些不希望改变的数值。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">size = (<span class="number">200</span>, <span class="number">400</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-3-Dictionary"><a href="#1-2-3-Dictionary" class="headerlink" title="1.2.3 Dictionary"></a>1.2.3 Dictionary</h4><p>字典呢就是将key-value的成对数据存放在一起的数据结构，相当于给每个真实值（value）都起了个名字（key）。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alien = &#123;<span class="string">&#x27;color&#x27;</span>: <span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;points&#x27;</span>: <span class="number">5</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># access value by key</span></span><br><span class="line">alien[key] --&gt; return a value</span><br><span class="line">alien.get(key, reutrn_value) --&gt; return the return_value # no error</span><br></pre></td></tr></table></figure>
+
+<p>增加元素：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alien[<span class="string">&#x27;speed&#x27;</span>] = <span class="number">100</span></span><br></pre></td></tr></table></figure>
+
+<p>删除元素:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">del alien[&#39;speed&#39;]</span><br></pre></td></tr></table></figure>
+
+<p>修改：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alien[<span class="string">&#x27;color&#x27;</span>] = <span class="string">&#x27;red&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>查询与遍历：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># loop through items, values, keys</span></span><br><span class="line"><span class="keyword">for</span> key, value <span class="keyword">in</span> alien.items()</span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> alien.values()</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> alien.keys()</span><br><span class="line"></span><br><span class="line"><span class="comment"># length</span></span><br><span class="line"><span class="built_in">len</span>(alien)</span><br></pre></td></tr></table></figure>
+
+<p>其他用法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Nesting: list of dictionaries, lists in dictionary, etc.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Dictionary Comprehension</span></span><br><span class="line">squares = &#123;x: x ** <span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>)&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-4-Set"><a href="#1-2-4-Set" class="headerlink" title="1.2.4 Set"></a>1.2.4 Set</h4><p>set一般用来去掉重复的数据，因为set中的元素是不能重复的。</p>
+<h2 id="1-2-基本流程控制与函数"><a href="#1-2-基本流程控制与函数" class="headerlink" title="1.2 基本流程控制与函数"></a>1.2 基本流程控制与函数</h2><p>基本的流程控制就是判断与循环。</p>
+<p>判断的部分比较简单，就是使用if-elif-else的格式逐次判断。循环包含for循环（之前介绍过了）与while循环。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">active = <span class="literal">True</span> <span class="comment"># a flag</span></span><br><span class="line"><span class="keyword">while</span> active:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> condition1:</span><br><span class="line">        <span class="keyword">break</span> <span class="comment"># quit the loop</span></span><br><span class="line">    <span class="keyword">elif</span> condition2:</span><br><span class="line">        <span class="keyword">continue</span> <span class="comment"># skip the current one</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>函数的功能主要提供了两种好处，第一是可以方便的复用，大大减少了重复的代码；其二，通过函数可以对原本的程序进行很好的封装。函数中的重点是对参数的理解，即parameters与arguments，其中arguments又有positional与keyword的区别。除了这些基本概念之外，需要注意以下几个问题。</p>
+<p>函数中不修改原列表：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print_models(lst[:])</span><br></pre></td></tr></table></figure>
+
+<p>传递任意数量位置参数–*args:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">make_pizza</span>(<span class="params">*toppings</span>):</span></span><br><span class="line">	<span class="built_in">print</span> toppings</span><br><span class="line">toppings = (<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>传递任意数量关键字参数–**kwargs:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">profile</span>(<span class="params">first, last, **user_info</span>):</span></span><br><span class="line">	<span class="built_in">print</span>(user_info)</span><br><span class="line">user_info = &#123;<span class="string">&#x27;age&#x27;</span> : <span class="number">34</span>, <span class="string">&#x27;height&#x27;</span>: <span class="number">1.78</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>另外可以将函数存放在其他模块中，通过import的方法，来引入相应函数。</p>
+<h3 id="1-3-类"><a href="#1-3-类" class="headerlink" title="1.3 类"></a>1.3 类</h3><h4 id="1-3-1-init"><a href="#1-3-1-init" class="headerlink" title="1.3.1 init"></a>1.3.1 init</h4><ul>
+<li>self必不可少，代表实例本身，并且会自动传递‘</li>
+<li>方法与属性</li>
+</ul>
+<h4 id="1-3-2-继承"><a href="#1-3-2-继承" class="headerlink" title="1.3.2 继承"></a>1.3.2 继承</h4><p>子类会继承父类的所有属性和方法，但是可以新增或重定义属性和方法。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ElectricalCar</span>(<span class="params">car</span>):</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, make, model, year</span>):</span></span><br><span class="line">        <span class="built_in">super</span>().__init__(make, model, year)</span><br></pre></td></tr></table></figure>
+
+<p>ps: 可以使用实例当作属性</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Battery</span>():</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, size = <span class="number">75</span></span>):</span></span><br><span class="line">        self.battery_size = size</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">describe_battery</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;__&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ElectricalCar</span>(<span class="params">car</span>):</span></span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, make, model, year</span>):</span></span><br><span class="line">        <span class="built_in">super</span>().__init__(make, model, year)</span><br><span class="line">        self.battery = Battery()</span><br><span class="line">        </span><br><span class="line">my_car = ElectricalCar(<span class="string">&#x27;Tesla&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;2021&#x27;</span>)</span><br><span class="line">my_car.battery.describe_battery()</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-3-3-编码风格"><a href="#1-3-3-编码风格" class="headerlink" title="1.3.3 编码风格"></a>1.3.3 编码风格</h4><p>类名使用：驼峰</p>
+<p>其余使用：下划线</p>
+<h3 id="1-4-文件"><a href="#1-4-文件" class="headerlink" title="1.4 文件"></a>1.4 文件</h3><p>使用with可以保证正确的关闭（不需要再使用close（））。读取文件需要open与read</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> file:</span><br><span class="line">    contents = file.read()</span><br><span class="line"><span class="comment"># line by line</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> file:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> file:</span><br><span class="line">        <span class="built_in">print</span>(line)</span><br><span class="line"><span class="comment"># all lines</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> file:</span><br><span class="line">    lines = file.readlines()</span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    <span class="built_in">print</span>(line)</span><br></pre></td></tr></table></figure>
+
+<p>ps: open()的参数：r(default), w, a, r+</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># write into empty file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">	file.write(<span class="string">&#x27;abc&#x27;</span>)</span><br><span class="line"><span class="comment"># write in additional info</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename, <span class="string">&#x27;a&#x27;</span>) <span class="keyword">as</span> file:</span><br><span class="line">	file.write(<span class="string">&#x27;ABC&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-5-异常"><a href="#1-5-异常" class="headerlink" title="1.5 异常"></a>1.5 异常</h3><h4 id="1-5-1-Try-Except-Else"><a href="#1-5-1-Try-Except-Else" class="headerlink" title="1.5.1 Try-Except-Else"></a>1.5.1 Try-Except-Else</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">	result = <span class="built_in">int</span>(a) / <span class="built_in">int</span>(b)</span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;cannot divide by zero!&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>Note: Deciding which error to report</p>
+<ul>
+<li>Failing silently</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">	<span class="keyword">with</span> <span class="built_in">open</span>(f_name) <span class="keyword">as</span> f:</span><br><span class="line">		lines = f.readlines()</span><br><span class="line">	<span class="keyword">except</span> FileNotFoundError:</span><br><span class="line">		<span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>Note: Don’t use bare except blocks ‘except:’</p>
+<h4 id="1-5-2-Storing-Data-with-Json"><a href="#1-5-2-Storing-Data-with-Json" class="headerlink" title="1.5.2 Storing Data with Json"></a>1.5.2 Storing Data with Json</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment"># store data</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">	json.dump(numbers, f)</span><br><span class="line"><span class="comment"># read date</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(filename) <span class="keyword">as</span> f:</span><br><span class="line">    json.load(f)</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-6-Unit-Test-amp-Test-Case"><a href="#1-6-Unit-Test-amp-Test-Case" class="headerlink" title="1.6 Unit Test &amp; Test Case"></a>1.6 Unit Test &amp; Test Case</h3><h4 id="1-6-1-Testing-a-Function"><a href="#1-6-1-Testing-a-Function" class="headerlink" title="1.6.1 Testing a Function"></a>1.6.1 Testing a Function</h4><p><img src="/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210511102835628.png" alt="image-20210511102835628"></p>
+<p>Creating a Test Case by unittest:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> name_function <span class="keyword">import</span> get_formatted_name</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NamesTestCase</span>(<span class="params">unittest.TestCase</span>):</span> <span class="comment"># inherit from unitest.TestCase</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_first_last_name</span>(<span class="params">self</span>):</span></span><br><span class="line">        formatted_name = get_formatted_name(<span class="string">&#x27;Jack&#x27;</span>, <span class="string">&#x27;Daniel&#x27;</span>)</span><br><span class="line">        self.assertEqual(formatted_name, <span class="string">&#x27;Jack Daniel&#x27;</span>) <span class="comment"># the Assert method</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
+
+<p>For a failing case: debug it by the help of error infomation.</p>
+<p>Adding new test cases: adding new methods in the corresponding class</p>
+<h4 id="1-6-2-Testing-a-Class"><a href="#1-6-2-Testing-a-Class" class="headerlink" title="1.6.2 Testing a Class"></a>1.6.2 Testing a Class</h4><p>Assert method:</p>
+<p><img src="/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/image-20210511104416811.png" alt="image-20210511104416811"></p>
+<p>Test Case for a class:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> survey <span class="keyword">import</span> AnonymousSurvey</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestAnomyousSurvey</span>(<span class="params">unittest.TestCase</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_single_response</span>(<span class="params">self</span>):</span></span><br><span class="line">        question = <span class="string">&#x27;AAA&#x27;</span></span><br><span class="line">        my_survey = AnonymousSurvey(question)</span><br><span class="line">        my_survey.store_response(<span class="string">&#x27;Eng&#x27;</span>)</span><br><span class="line">        self.assertIn(<span class="string">&#x27;Eng&#x27;</span>, my_survey.responses)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
+
+<p>Using setUp() to create test cases:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> survey <span class="keyword">import</span> AnonymousSurvey</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestAnomyousSurvey</span>(<span class="params">unittest.TestCase</span>):</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setUp</span>(<span class="params">self</span>):</span></span><br><span class="line">        question = <span class="string">&#x27;AAA&#x27;</span></span><br><span class="line">        self.my_survey = AnonymousSurvey(question)</span><br><span class="line">        self.responses = [<span class="string">&#x27;eng&#x27;</span>, <span class="string">&#x27;man&#x27;</span>, <span class="string">&#x27;spa&#x27;</span>]</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_single_response</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.my_survey.store_response(self.responses[<span class="number">0</span>])</span><br><span class="line">        self.assertIn(self.responses[<span class="number">0</span>], self.my_survey.responses)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_store_three_response</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">for</span> res <span class="keyword">in</span> self.responses:</span><br><span class="line">            self.my_survey.store_response(res)</span><br><span class="line">            self.assertIn(res, self.my_survey.responses)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
+
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -199,10 +355,73 @@
       
 
       
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/12/Python%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/03/27/CS-AI%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CS/AI学习路线</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -222,246 +441,14 @@
 
 
 
-
   
-    <article id="post-CS-AI学习路线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/27/CS-AI%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">CS/AI学习路线</a>
-    </h1>
   
 
-        
-        <a href="/2021/03/27/CS-AI%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" class="archive-article-date">
-  	<time datetime="2021-03-27T06:47:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="CS-AI学习路线"><a href="#CS-AI学习路线" class="headerlink" title="CS/AI学习路线"></a>CS/AI学习路线</h1><p>这里写的是个人的学习计划。在之前的学习规划中，CS部分的规划，基本上与<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/19959253">编程入门指南v1.5</a>中的推荐路线一致。最近又看到了<a target="_blank" rel="noopener" href="https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md">TeachYourselfCS</a>这个学习路线，发现与编程入门指南中推荐的书籍、课程、路线有许多共同的特征。因此综合了这两个学习路线并结合目前的实际情况，规划了CS部分的学习计划。</p>
-<p>这里说明一点是，本人非计算机科班，几乎可以看作0CS基础（有数电模电等基础）。并且，两个路线都很好的解释了为什么要推荐相应的科目与课程，也给出了很多学习的建议与资料。但个人学习路线的规划，即要考虑别人的建议，又要结合自身的实际情况，才能做出符合自己实际的规划。条条大路通罗马，即使是针对某一具体科目，能获得成功的途径也不止一条，根据自身情况选择就好，而没有必要完成推荐路线中所有的内容（也就是不要有强迫症）；也不用去追求搜集全所有资料，够用就好，重要的还是尽快开始。</p>
-<p>除了CS部分的学习计划以外，也做了相应的AI方面的规划。现在的AI领域（尤其深度学习）有许多培训机构、或知识分享团队，给出了很多复杂的学习路线。但实际上，有些内容是没必要的。根据自己情况，挑选几种最好的资源即可。毕竟时间和精力都太有限了。另外，在数学上，CS几乎只需要额外学习离散数学（当然要有一些线性代数、微积分的基础），AI领域的话，有其他的数学领域需要熟悉，所以也单独设计了基础的数学学习路线，设计的原则是：刚刚好够用即可。</p>
-        
-          <a class="article-more-a" href="/2021/03/27/CS-AI%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习路线</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-线性代数1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/">线性代数1</a>
-    </h1>
   
 
-        
-        <a href="/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/" class="archive-article-date">
-  	<time datetime="2021-03-23T08:44:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="0-说明"><a href="#0-说明" class="headerlink" title="0. 说明"></a>0. 说明</h2><p>最近在复习线性代数. 感觉以前学的数学快忘光了, 只有一点模糊的印象, 很多具体的公式和概念已经很模糊了. 所以打算先从线性代数开始复习, 之后可能还会复习一下微积分和数理统计, 如果有需要, 之后还会学习一下离散数学, 实分析, 图论等数学知识.</p>
-<p>选择的学习材料是MIT的18.06课程. 看了一部分视频, 但还是觉得看书更快一点, 总结的也更全面. 书使用的就是18.06的教材: <code>Introduction To Linear Algebra</code>. </p>
-<p>在这里写下的不是完整的笔记(个人也不太喜欢边看书/听课边记笔记). 在看书或者听课的时候, 记下简单的线索就可以了. 所以写的大多是看过相关章节后的个人总结. 所以可能会有错误或者信息不全的问题. 但对个人学习来说, 错误的总结也好过精美的摘抄. 之后也可能在回顾的时候, 修改一些明显的错误. </p>
-        
-          <a class="article-more-a" href="/2021/03/23/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B01/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">线性代数</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-创建个人博客Hexo-Github" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2Hexo-Github/">创建个人博客Hexo+Github</a>
-    </h1>
   
 
-        
-        <a href="/2021/03/22/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2Hexo-Github/" class="archive-article-date">
-  	<time datetime="2021-03-22T08:45:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-个人技术博客的初衷"><a href="#1-个人技术博客的初衷" class="headerlink" title="1. 个人技术博客的初衷"></a>1. 个人技术博客的初衷</h2><p>个人认为, 内容才是个人技术博客的核心. 因此博客设立的开始便准备依据MVP原则, 先创建一个可以写技术内容, 分享经验的地方, 对博客技术上的复杂内容, 准备之后再慢慢了解.</p>
-<p>因此, 在创建博客的时候, 一开始只是打算使用github page部署出一个页面. 但pages其实只是使用readme.md或index.html生成一个页面, 写作时诸多不便. 简单搜索b站相关视频后决定, 采用Hexo生成静态博客, 再将其部署到Github上(这样选择的原因仅仅是找到的比较完整的教程, 使用的是这样的技术框架).</p>
-<p>至于为什么想创建一个技术博客, 有几点关键的原因:</p>
-<p>​    <strong>在日常学习的过程中, 感觉到费曼学习法是最有效的方法, 即将学到的知识, 用自己的话(假设在教别人)表达出来. 博客第一个功能便是记录了日常学习, 也是现阶段的主要功能</strong></p>
-<p>​    <strong>&lt;原则&gt;里面讲, 头脑极度开放, 才能取得做大的进步及有意义的人际关系, 所以博客是有一个可以”开放”自己思想的地方, 对形成这样的习惯集有好处, 这便是第二个初衷</strong></p>
-<p>​    <strong>我的工作性质是既有研究, 又需要支持项目的AI算法工程师.  不是科班出身, 近期才开始转行. 所以在日常工作和学习中, 经常遇到这样那样的问题, 讲这些问题, 及尝试过的解决方案和最终解决方案写出来, 个人相信也是一件很有意义的事情</strong></p>
-<p>所以基于以上三点创建了这个简单的博客. 现阶段的计划是, 根据学习和工作内容, 整理一些理论和实践知识与经验. 之后如何利用博客, 便是以后才应该考虑的事情了.</p>
-        
-          <a class="article-more-a" href="/2021/03/22/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2Hexo-Github/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -484,8 +471,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
